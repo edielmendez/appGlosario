@@ -1,0 +1,29 @@
+.termino{
+	-webkit-box-shadow: 7px 7px 13px 0px rgba(72, 110, 122, 0.75);
+	-moz-box-shadow:    7px 7px 13px 0px rgba(72, 110, 122, 0.75);
+	box-shadow:         7px 7px 13px 0px rgba(72, 110, 122, 0.75);
+	padding: 10px;
+	border-style: solid;
+	margin: 10px;
+	margin-left: 100px;
+}
+
+.titulo{
+	color: teal;
+	margin-bottom: 0px;
+}
+
+.definicion{
+	margin-top: 5px;	
+	color: rgba(0,0,0,0.7);
+}
+
+.fuente{
+	margin-bottom: 20px;
+}
+
+.btn-red{
+	background: rgba(255,0,0,0.5);
+	color: white;
+	margin: 5px;
+}

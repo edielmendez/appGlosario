@@ -1,0 +1,48 @@
+
+
+.termino {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+    border-left-width: 5px;
+    border-radius: 3px;
+    border-left-color: #1b809e;
+}
+.termino h4 {
+    color: #1b809e;
+    margin-bottom: 2px;
+}
+
+.termino  span{
+    color: gray;
+}
+
+.termino p{
+	margin-top: 10px;
+}
+
+
+.mynav	 {
+  -webkit-box-shadow: 0 8px 20px -6px black;
+  /*-moz-box-shadow: 0 8px 6px -6px black;
+  box-shadow: 0 8px 6px -6px black;*/
+}
+
+.contenido{
+ padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #eee;
+   height: 400px;
+    border-radius: 3px;
+
+    /*box-shadow: 0px 0px 20px black;*/
+
+
+
+}
+
+.areaResultados{
+	border: 1px solid red;
+  height: 300px;
+  overflow: scroll;
+}
