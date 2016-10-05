@@ -30,8 +30,6 @@ $termino->id = $id;
 // read the details of termino to be edited
 $termino->readOne();
 
-echo $termino->id;
-
  ?>
 
 <!DOCTYPE html>
@@ -72,6 +70,9 @@ box-shadow:         0px 0px 5px 4px rgba(50, 50, 50, 0.75);
   }
   a{
     margin-left: 200px;
+  }
+  .container{
+    margin-top: 100px;
   }
   </style>
 

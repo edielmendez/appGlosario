@@ -2,7 +2,7 @@
 if (session_id()==null)
   session_start();
   if(isset($_SESSION['user'])){
-    header("location: views/admin.php");
+    header("location: views/admin/admin.php");
   }
  ?>
 

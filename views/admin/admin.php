@@ -4,40 +4,7 @@ if (session_id()==null)
   if(!isset($_SESSION['user'])){
     header("location: ../index.php");
   }
- /*
- include_once '../../config/database.php';
 
-include_once '../../objects/termino.class.php';
-$database = new Database();
-$db = $database->getConnection();
- 
-$termino = new Termino($db);
-    $terminos = array();
-    $stmt = $termino->readAll();
-    $num = $stmt->rowCount();
-
-    
-    if($num>0){
-    $x=0;
-    
-    // retrieve our table contents
-    // fetch() is faster than fetchAll()
-    // http://stackoverflow.com/questions/2770630/pdofetchall-vs-pdofetch-in-a-loop
-    while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-        // extract row
-        // this will make $row['name'] to
-        // just $name only
-        extract($row);
-        $data =  array();
-        $data['id'] = $id;
-        $data['termino'] = $termino;
-        $data['definicion'] = $definicion;
-        $data['fuente'] = $fuente;
-        $terminos[$x]=$data;
-        $x++;
-    }
-        
-}*/
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -85,10 +52,35 @@ $termino = new Termino($db);
       <script src="js/respond.min.js"></script>
       <script src="js/lte-ie7.js"></script>
     <![endif]-->
+
+    <style type="text/css">
+    .flotante {
+            display:scroll;
+                position:fixed;
+                top:150px;
+                right:100px;
+        }
+      .mybtn {
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 20px;
+  background: teal;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.mybtn:hover {
+  background: #0e4669;
+  text-decoration: none;
+}
+    </style>
   </head>
 
   <body ng-app='appGlosario'>
-
+<a class='flotante mybtn' href="../newTermino.php" >Nuevo Termino</a>
   
   <!-- container section start -->
   <section id="container" class="">
@@ -158,63 +150,20 @@ $termino = new Termino($db);
                           <span>Dashboard</span>
                       </a>
                   </li>
-				  <li class="sub-menu">
-                      <a  class="btn btn-primary" href="../newTermino.php">
-                          Nuevo Termino
-                      </a>
-                      
-                  </li>
+				
+                
                   <li class="sub-menu">
-                      <a href=""></a>
-                      
-                  </li> 
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
+                      <a href="../cmmi.php" class="">
                           <i class="icon_document_alt"></i>
                           <span>CMMI</span>
                           <span class="menu-arrow arrow_carrot-right"></span>
                       </a>
                       
                   </li>
-                  <li>
-                      <a class="" href="widgets.html">
-                          <i class="icon_genius"></i>
-                          <span>MoproSoft</span>
-                      </a>
-                  </li>
-                  <li>                     
-                      <a class="" href="chart-chartjs.html">
-                          <i class="icon_piechart"></i>
-                          <span>TCP</span>
-                          
-                      </a>
-                                         
-                  </li>
+                 
+                 
                              
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_table"></i>
-                          <span>PSP</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">
-                          <li><a class="" href="basic_table.html">Basic Table</a></li>
-                      </ul>
-                  </li>
-                  
-                  <li class="sub-menu">
-                      <a href="javascript:;" class="">
-                          <i class="icon_documents_alt"></i>
-                          <span>SWEBOK</span>
-                          <span class="menu-arrow arrow_carrot-right"></span>
-                      </a>
-                      <ul class="sub">                          
-                          <li><a class="" href="profile.html">Profile</a></li>
-                          <li><a class="" href="login.html"><span>Login Page</span></a></li>
-                          <li><a class="" href="blank.html">Blank Page</a></li>
-                          <li><a class="" href="404.html">404 Error</a></li>
-                      </ul>
-                  </li>
+             
                   
               </ul>
               <!-- sidebar menu end-->

@@ -31,10 +31,10 @@
 	</script>-->
 </head>	
 <body ng-app="appGlosario" ng-controller="controllerSearch" >
-<nav class="navbar navbar-default mynav" role="navigation">
+<nav class="navbar navbar-default mynav" role="navigation" >
   <div class="container">
     
-    <div class="navbar-header">
+    <div class="navbar-header" >
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapsible">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
@@ -81,9 +81,9 @@ Glossary of Software Engineering</a>
         <div class="panel-heading">Modelos de procesos</div>
         <div class="panel-body">
           <ul class="list-group">
-            <li class="list-group-item">MoproSoft</li>
+            <!--<li class="list-group-item">MoproSoft</li>-->
             <li class="list-group-item"><a href="views/cmmi.php">CMMI </a></li>
-            <li class="list-group-item">ISO/IEC 15504</li>
+            <!--<li class="list-group-item">ISO/IEC 15504</li>-->
            
           </ul>
         </div>

@@ -37,14 +37,51 @@
             -moz-box-shadow:    0px 3px 5px 0px rgba(50, 50, 50, 0.66);
             box-shadow:         0px 3px 5px 0px rgba(50, 50, 50, 0.66);
             width: 50%;
-            padding: 5px;
+            padding: 8px;
             float: left;
             
         }
+        .nivel_madurez{
+            color: teal;
+            font-weight: bolder;
+        }
+        .flotante {
+            display:scroll;
+                position:fixed;
+                top:50px;
+                left:10px;
+        }
+        .btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
     </style>
 </head>
 <body>
 
+<a class='flotante btn' href='../index.php' >Regresar al glosario</a>
 
 
 
@@ -118,7 +155,44 @@
                 <strong>Niveles de Capacidad</strong>
             </div>
             <div class="body">
-                Ut eget suscipit justo. Donec egestas vel lorem eu maximus. Donec a felis mauris. Sed nec lacinia ex. Suspendisse fermentum justo erat, quis lacinia nisi tristique non. Cras malesuada, magna eu ultrices placerat, diam enim lacinia turpis, a convallis arcu ligula dapibus felis. Duis efficitur posuere nulla, nec maximus nulla finibus at. Integer quam sapien, porttitor vel dolor in, lacinia vestibulum urna. In in nisl mi. Etiam dignissim ipsum eget ultricies efficitur. Vestibulum elementum justo condimentum nisi rutrum, vitae imperdiet velit suscipit. Proin nisl enim, lobortis et porta in, venenatis ut dolor. Sed leo velit, pharetra vel ligula sed, tempus rutrum turpis. Sed pretium turpis vel elit rhoncus viverra. In arcu mi, tristique id elementum consectetur, ultricies pulvinar dolor.
+                <p class="nivel_madurez">Nivel de capacidad 0: Incompleto</p>
+                <p>Un proceso incompleto es un proceso que, o bien no se realiza, o se
+                realiza parcialmente. Al menos una de las metas específicas del área de
+                proceso no se satisface y no existen metas genéricas para este nivel, ya
+                que no hay ninguna razón para institucionalizar un proceso realizado
+                parcialmente
+                </p>
+
+                <p class="nivel_madurez">Nivel de capacidad 1: Realizado</p>
+                <p>Un proceso de nivel de capacidad 1 se caracteriza como un proceso realizado.
+                Un proceso realizado es un proceso que lleva a cabo el trabajo
+                necesario para producir productos de trabajo. Se satisfacen las metas
+                específicas del área de proceso.
+                Aunque el nivel de capacidad 1 da como resultado mejoras importantes,
+                esas mejoras pueden perderse con el tiempo si no se institucionalizan.
+                La aplicación de la institucionalización (las prácticas
+                genéricas de CMMI en los niveles de capacidad 2 y 3) ayuda a asegurar
+                que las mejoras se mantienen.
+                </p>
+
+                <p class="nivel_madurez">Nivel de capacidad 2: Gestionado</p>
+                <p>Un proceso de nivel de capacidad 2 se caracteriza como un proceso
+                gestionado. Un proceso gestionado es un proceso realizado que se
+                planifica y ejecuta de acuerdo con la política; emplea personal cualificado
+                que tiene los recursos adecuados para producir resultados
+                controlados; involucra a las partes interesadas relevantes; se monitoriza,
+                controla y revisa; y se evalúa la adherencia frente a la descripción
+                de su proceso.
+                </p>
+
+                <p class="nivel_madurez">Nivel de capacidad 3: Definido</p>
+                <p>Un proceso de nivel de capacidad 3 se caracteriza como un proceso
+                definido. Un proceso definido es un proceso gestionado que se adapta a
+                partir del conjunto de procesos estándar de la organización de acuerdo
+                a las guías de adaptación de la organización; tiene una descripción de
+                proceso que se mantiene y que contribuye a los activos de proceso de
+                la organización con experiencias relativas a procesos.
+                </p>
             </div>
         </div>
 
@@ -129,7 +203,73 @@
                 <strong>Niveles de Madurez</strong>
             </div>
             <div class="body">
-                Ut eget suscipit justo. Donec egestas vel lorem eu maximus. Donec a felis mauris. Sed nec lacinia ex. Suspendisse fermentum justo erat, quis lacinia nisi tristique non. Cras malesuada, magna eu ultrices placerat, diam enim lacinia turpis, a convallis arcu ligula dapibus felis. Duis efficitur posuere nulla, nec maximus nulla finibus at. Integer quam sapien, porttitor vel dolor in, lacinia vestibulum urna. In in nisl mi. Etiam dignissim ipsum eget ultricies efficitur. Vestibulum elementum justo condimentum nisi rutrum, vitae imperdiet velit suscipit. Proin nisl enim, lobortis et porta in, venenatis ut dolor. Sed leo velit, pharetra vel ligula sed, tempus rutrum turpis. Sed pretium turpis vel elit rhoncus viverra. In arcu mi, tristique id elementum consectetur, ultricies pulvinar dolor.
+                <p class="nivel_madurez">Nivel de madurez 1: Inicial</p>
+                <p>En el nivel de madurez 1, los procesos son generalmente ad hoc y
+                caóticos. La organización generalmente no proporciona un entorno
+                estable para dar soporte a los procesos. El éxito en estas organizaciones
+                depende de la competencia y la heroicidad del personal de la organización
+                y no del uso de procesos probados. A pesar de este caos, las
+                organizaciones de nivel de madurez 1 a menudo producen productos
+                y servicios que funcionan pero, sin embargo, exceden con frecuencia
+                el presupuesto y los plazos planificados. 
+                </p>
+
+                <p class="nivel_madurez">Nivel de madurez 2: Gestionado</p>
+                <p>En el nivel de madurez 2, se garantiza que en los proyectos los procesos
+                se planifican y ejecutan de acuerdo con las políticas; los proyectos
+                emplean personal cualificado que dispone de recursos adecuados para
+                producir resultados controlados; se involucra a las partes interesadas
+                relevantes; se monitorizan, controlan y revisan; y se evalúan en cuanto
+                a la adherencia a sus descripciones de proceso. La disciplina de proceso
+                reflejada por el nivel de madurez 2 ayuda a asegurar que las prácticas
+                existentes se mantienen durante periodos bajo presión. Cuando
+                estas prácticas están desplegadas, los proyectos se realizan y gestionan
+                de acuerdo a sus planes documentados. 
+                </p>
+
+                <p class="nivel_madurez">Nivel de madurez 3: Definido</p>
+                <p>En el nivel de madurez 3, los procesos están bien caracterizados y
+                comprendidos, y se describen en estándares, procedimientos, herramientas
+                y métodos. El conjunto de procesos estándar de la organización,
+                que es la base del nivel de madurez 3, se establece y se mejora
+                a lo largo del tiempo. Estos procesos estándar se utilizan para establecer
+                la integridad en toda la organización. Los proyectos establecen
+                sus procesos definidos adaptando el conjunto de procesos estándar
+                de la organización de acuerdo a las guías de adaptación.
+                </p>
+
+                <p class="nivel_madurez">Nivel de madurez 4: Gestionado cuantitativamente</p>
+                <p>En el nivel de madurez 4, la organización y los proyectos establecen
+                objetivos cuantitativos para la calidad y el rendimiento del proceso,
+                y los utilizan como criterios en la gestión de los proyectos. Los objetivos
+                cuantitativos se basan en las necesidades del cliente, usuarios
+                finales, organización e implementadores del proceso. La calidad y el
+                rendimiento del proceso se interpretan en términos estadísticos y se
+                gestionan durante la vida de los proyectos.
+                </p>
+
+                <p class="nivel_madurez">Nivel de madurez 5: En optimización</p>
+                <p>En el nivel de madurez 5, una organización mejora continuamente
+                sus procesos basándose en una comprensión cuantitativa de sus
+                objetivos de negocio y necesidades de rendimiento. La organización
+                utiliza un enfoque cuantitativo para comprender la variación inherente
+                en el proceso y las causas de los resultados del proceso.
+                El nivel de madurez 5 se centra en mejorar continuamente el
+                rendimiento de los procesos mediante mejoras incrementales e
+                innovadoras de proceso y de tecnología. Los objetivos de calidad
+                y de rendimiento del proceso de la organización se establecen, se
+                modifican continuamente para reflejar cambios en los objetivos
+                del negocio y en el rendimiento de la organización, y se utilizan
+                como criterios para gestionar la mejora de procesos. Los efectos de
+                las mejoras de procesos desplegadas se miden utilizando técnicas
+                estadísticas y otras técnicas cuantitativas, y se comparan con los
+                objetivos de calidad y de rendimiento del proceso. Los procesos
+                definidos del proyecto, el conjunto de procesos estándar de la organización
+                y la tecnología de soporte, son objeto de actividades de
+                mejora medibles.
+                </p>
+
+                
             </div>
         </div>
     </div>
